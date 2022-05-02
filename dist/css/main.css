@@ -8950,6 +8950,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.banner {
+  background-color: darkgrey;
+  padding: 6rem 0;
+}
+.banner__content {
+  color: #fff;
+}
+
 .header {
   background-color: #414042;
   padding: 1rem 0;

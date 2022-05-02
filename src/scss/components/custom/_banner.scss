@@ -1,0 +1,8 @@
+.banner {
+    background-color: darkgrey; // temporary - will replace with an image
+    padding: 6rem 0;
+
+    &__content {
+        color: $white;
+    }
+}
