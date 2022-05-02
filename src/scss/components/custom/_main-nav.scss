@@ -1,10 +1,9 @@
 .main-nav {
     background-color: $primary;
-    padding: 3rem 0;
+    border-bottom: 0.5rem solid $secondary;
 
     &__links {
         display: flex;
-        gap: 1rem;
         padding: 0;
         margin: 0;
         list-style: none;
@@ -13,15 +12,18 @@
             color: $white;
             font-weight: bold;
             text-decoration: none;
-            padding: 0.5rem;
+            padding: 1rem;
+            display: block;
 
             &:hover {
-                text-decoration: underline;
+                background-color: $secondary;
+                transition: 0.2s;
             }
-        }
 
-        .active {
-            border-bottom: solid 6px $white;
+            &.active {
+                border-bottom: 0.5rem solid $primary;
+                margin-bottom: -0.5rem;
+            }
         }
     }
 }
