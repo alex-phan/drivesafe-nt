@@ -1,0 +1,11 @@
+.header {
+    background-color: $secondary;
+    padding: 1rem 0;
+
+    &__logo {
+        img {
+            width: 198px;
+            height: auto;
+        }
+    }
+}

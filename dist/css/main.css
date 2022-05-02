@@ -8950,6 +8950,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.header {
+  background-color: #414042;
+  padding: 1rem 0;
+}
+.header__logo img {
+  width: 198px;
+  height: auto;
+}
+
 .main-nav {
   background-color: #bb2026;
   border-bottom: 0.5rem solid #414042;
