@@ -2,6 +2,7 @@
 
 ## Prerequisites ##
 
+* [Git] (https://git-scm.com/downloads)
 * [NodeJS](https://nodejs.org/en/download/)
 
 ## Install ##
@@ -12,7 +13,7 @@ Once cloned or downloaded, install the dependencies:
 npm install
 ```
 
-For development - make sure to run again before committing code to the repository:
+For development:
 
 ```bash
 npm run dev
