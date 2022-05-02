@@ -1,4 +1,4 @@
-# DriveSafe NT
+# DriveSafe NT Redesign, Built with Bootstrap v5
 
 ## Prerequisites ##
 
@@ -7,11 +7,13 @@
 
 ## Install ##
 
-Once cloned or downloaded, install the dependencies:
+Once cloned, install the dependencies:
 
 ```bash
 npm install
 ```
+
+## Development and Production ##
 
 For development:
 
@@ -19,7 +21,8 @@ For development:
 npm run dev
 ```
 
-For committing to production:
+For committing to production (live site):
+
 ```bash
 git add dist && git commit -m "commit message"
 ```
