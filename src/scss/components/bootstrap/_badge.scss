@@ -1,0 +1,27 @@
+.badge {
+    &--auto {
+        background-color: $green;
+    }
+
+    &--manual {
+        background-color: $blue;
+    }
+
+    &--darwin {
+        background-color: $orange;
+    }
+
+    &--casuarina {
+        color: $black;
+        background-color: $yellow;
+    }
+
+    &--palmerston {
+        background-color: $red;
+    }
+
+    &--nhulunbuy {
+        color: $white;
+        background-color: $black;
+    }
+}

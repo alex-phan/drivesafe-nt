@@ -1,0 +1,30 @@
+.card {
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 1rem lighten($secondary, 50%);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-title {
+    background-color: $secondary;
+    padding: 0.8rem 1rem;
+    margin: 0;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: $primary;
+        transition: 0.2s;
+    }
+}
+
+.card-text {
+    padding: 0.8rem 1.2rem;
+}
