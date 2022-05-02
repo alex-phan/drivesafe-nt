@@ -2,7 +2,7 @@
 
 ## Prerequisites ##
 
-* [Git] (https://git-scm.com/downloads)
+* [Git](https://git-scm.com/downloads)
 * [NodeJS](https://nodejs.org/en/download/)
 
 ## Install ##
