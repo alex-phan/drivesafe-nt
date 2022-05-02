@@ -21,11 +21,8 @@ For development:
 npm run dev
 ```
 
-For committing to production (live site):
+For pushing changes to the live site:
 
-```bash
-git add dist && git commit -m "commit message"
-```
 ```bash
 git subtree push --prefix dist origin gh-pages
 ```
