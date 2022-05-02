@@ -1,58 +1,60 @@
 {
-  "name": "drivesafe-nt",
-  "version": "1.0.0",
-  "private": true,
-  "description": "DriveSafe NT Redesign, built with Bootstrap v5",
-  "contributors": [
-    "Alex",
-    "Ben",
-    "Jamal",
-    "Maaz"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alex-phan/drivesafe-nt"
-  },
-  "bugs": {
-    "url": "https://github.com/alex-phan/drivesafe-nt/issues"
-  },
-  "homepage": "",
-  "keywords": [
-    "bootstrap",
-    "sass",
-    "css",
-    "javascript"
-  ],
-  "scripts": {
-    "build:purgecss": "purgecss -css dist/css/main.css --content dist/*html --output dist/css/main.css",
-    "build:autoprefix": "postcss -u autoprefixer -r dist/css/main.css",
-    "build:css": "sass --style expanded \"./src/scss/main.scss\" \"./dist/css/main.css\"",
-    "build:js": "browserify ./src/js/bootstrap.js > ./dist/bootstrap.js && concat -o ./dist/bundle.js ./dist/bootstrap.js ./src/js/functions.js && rm -rf ./dist/bootstrap.js",
-    "build:html": "cp -ra ./src/pages/*.html ./dist",
-    "build:dev": "npm run clean && npm run build:css && npm run build:autoprefix && npm run build:js && npm run build:html",
-    "clean": "rm -rf ./dist",
-    "serve": "browser-sync start --server ./dist -w --files \"./dist/**/*.html\" \"./dist/css/main.css\" \"./dist/js/bundle.js\"",
-    "watch:sass": "onchange \"./src/scss/**/*.scss\" -- npm run build:css && npm run build:autoprefix",
-    "watch:js": "onchange \"./src/js/**/*.js\" -- npm run build:js",
-    "watch:html": "onchange \"./src/pages/**/*.html\" -- npm run build:html",
-    "dev": "npm run build:dev && npm-run-all --parallel serve watch:sass watch:js watch:html",
-    "prettier": "prettier --write ./src/"
-  },
-  "dependencies": {
-    "bootstrap": "^5.1.3"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.5",
-    "browserify": "^17.0.0",
-    "browser-sync": "^2.27.9",
-    "concat": "^1.0.3",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^7.1.0",
-    "postcss": "^8.4.13",
-    "postcss-cli": "^9.1.0",
-    "prettier": "^2.6.2",
-    "purgecss": "^4.1.3",
-    "sass": "^1.51.0"
-  }
+    "name": "drivesafe-nt",
+    "version": "1.0.0",
+    "private": true,
+    "description": "DriveSafe NT Redesign, built with Bootstrap v5",
+    "contributors": [
+        "Alex",
+        "Ben",
+        "Jamal",
+        "Maaz"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alex-phan/drivesafe-nt"
+    },
+    "bugs": {
+        "url": "https://github.com/alex-phan/drivesafe-nt/issues"
+    },
+    "homepage": "",
+    "keywords": [
+        "bootstrap",
+        "sass",
+        "css",
+        "javascript"
+    ],
+    "scripts": {
+        "build:purgecss": "purgecss -css dist/css/main.css --content dist/*html --output dist/css/main.css",
+        "build:autoprefix": "postcss -u autoprefixer -r dist/css/main.css",
+        "build:css": "sass --style expanded \"./src/scss/main.scss\" \"./dist/css/main.css\"",
+        "build:js": "browserify ./src/js/bootstrap.js > ./dist/bootstrap.js && concat -o ./dist/bundle.js ./dist/bootstrap.js ./src/js/functions.js && rm -rf ./dist/bootstrap.js",
+        "build:html": "cp -R ./src/pages/*.html ./dist",
+        "build:dev": "npm run clean && npm run build:css && npm run build:autoprefix && npm run build:js && npm run build:html",
+        "clean": "rm -rf ./dist",
+        "serve": "browser-sync start --server ./dist -w --files \"./dist/**/*.html\" \"./dist/css/main.css\" \"./dist/js/bundle.js\"",
+        "watch:sass": "onchange \"./src/scss/**/*.scss\" -- npm run build:css && npm run build:autoprefix",
+        "watch:js": "onchange \"./src/js/**/*.js\" -- npm run build:js",
+        "watch:html": "onchange \"./src/pages/**/*.html\" -- npm run build:html",
+        "dev": "npm run build:dev && npm-run-all --parallel serve watch:sass watch:js watch:html",
+        "prettier": "prettier --write ./src/"
+    },
+    "dependencies": {
+        "bootstrap": "^5.1.3",
+        "chokidar": "^3.5.3",
+        "npm-install-missing": "^0.1.4"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.5",
+        "browser-sync": "^2.27.9",
+        "browserify": "^17.0.0",
+        "concat": "^1.0.3",
+        "npm-run-all": "^4.1.5",
+        "onchange": "^7.1.0",
+        "postcss": "^8.4.13",
+        "postcss-cli": "^9.1.0",
+        "prettier": "^2.6.2",
+        "purgecss": "^4.1.3",
+        "sass": "^1.51.0"
+    }
 }
