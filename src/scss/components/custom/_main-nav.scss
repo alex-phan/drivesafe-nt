@@ -1,0 +1,26 @@
+.main-nav {
+    background-color: $primary;
+    padding: 3rem 0;
+
+    &__links {
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+        list-style: none;
+
+        a {
+            color: $white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0.5rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .active {
+            border-bottom: solid 6px $white;
+        }
+    }
+}
