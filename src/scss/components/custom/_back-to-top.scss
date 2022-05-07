@@ -1,0 +1,29 @@
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+
+    @include media-breakpoint-down(md) {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    button {
+        background-color: $primary;
+        border: none;
+        border-radius: 50%;
+        padding: 1rem;
+        width: 56px;
+        height: 56px;
+
+        &:hover {
+            background-color: $secondary;
+            transition: 0.2s;
+        }
+    }
+
+    i {
+        color: $white;
+    }
+}
