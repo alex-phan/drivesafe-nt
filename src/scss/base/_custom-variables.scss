@@ -9,3 +9,15 @@ $font-family-base: 'Lato', var(--bs-font-sans-serif);
 
 // Cards
 $card-height: 100%;
+
+// Accordions
+$accordion-border-width: 0;
+
+$accordion-button-color: #fff;
+$accordion-button-bg: $secondary;
+$accordion-button-active-bg: $primary;
+$accordion-button-active-color: #fff;
+
+$accordion-button-focus-box-shadow: none;
+
+$accordion-icon-width: 2rem;

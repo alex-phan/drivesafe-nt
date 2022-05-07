@@ -1,0 +1,9 @@
+.accordion-button {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+}
