@@ -5268,7 +5268,7 @@ function searchDrivingSchool() {
     const input = document.getElementById('search').value.toUpperCase();
     const cardLists = document.getElementById('card-lists');
     //console.log(cardLists);
-    const cardsArr = cardLists.getElementsByClassName('card');
+    const cardsArr = cardLists.getElementsByClassName('col');
     //console.log(cardsArr);
 
     //Looping through cards
@@ -5289,7 +5289,7 @@ function searchDrivingSchool2() {
     const input = document.getElementById('search2').value.toUpperCase();
     const cardLists = document.getElementById('card-lists2');
     //console.log(cardLists);
-    const cardsArr = cardLists.getElementsByClassName('card');
+    const cardsArr = cardLists.getElementsByClassName('col');
     //console.log(cardsArr);
 
     //Looping through cards
