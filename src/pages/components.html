@@ -13,15 +13,7 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="header__logo">
-                <h1><span>Drive</span>Safe NT</h1> 
-            </a>
-        </div>
-    </header>
-
-    <nav class="mobile-nav d-none">
+    <nav class="mobile-nav d-none" id="mmenu">
         <ul>
             <li>
                 <a href="index.html">Home</a>
@@ -48,6 +40,14 @@
             </li>
         </ul>
     </nav>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header__logo">
+                <h1><span>Drive</span>Safe NT</h1> 
+            </a>
+        </div>
+    </header>
 
     <nav class="main-nav">
         <div class="container">
@@ -81,7 +81,7 @@
                     </li>
                 </ul>
                 <div class="main-nav__mobile">
-                    <a href="#">
+                    <a href="#mmenu">
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
