@@ -78,15 +78,25 @@ function searchDrivingSchool() {
             cardsArr[i].style.display = "none";
         }
     }
+}
 
-    //for (let i = 0; i < cardsArr.length; i++) {
-    //    let title = cardsArr[i].querySelector(".card-body .card-title a.stretched-link");
-    //    console.log(title);
+// Search
+function searchDrivingSchool2() {
+    const input = document.getElementById('search2').value.toUpperCase();
+    const cardLists = document.getElementById('card-lists2');
+    //console.log(cardLists);
+    const cardsArr = cardLists.getElementsByClassName('card');
+    //console.log(cardsArr);
 
-    //    if (title.innerText.toUpperCase().indexOf(input) > -1) {
-    //        cardsArr[i].style.display = "";
-    //    } else {
-    //        cardsArr[i].style.display = "none";
-    //    }
-    //}
+    //Looping through cards
+    for (let i = 0; i < cardsArr.length; i++) {
+        let title = cardsArr[i].querySelector(".card-body .card-title a.stretched-link");
+        console.log(title);
+
+        if (title.innerText.toUpperCase().indexOf(input) > -1) {
+            cardsArr[i].style.display = "";
+        } else {
+            cardsArr[i].style.display = "none";
+        }
+    }
 }
