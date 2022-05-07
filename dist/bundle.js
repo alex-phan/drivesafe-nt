@@ -4333,7 +4333,7 @@ window.bootstrap.Dropdown = require('bootstrap/js/dist/dropdown');
 // window.bootstrap.Tooltip = require('bootstrap/js/dist/tooltip');
 },{"@popperjs/core":1,"bootstrap/js/dist/base-component":2,"bootstrap/js/dist/button":3,"bootstrap/js/dist/collapse":4,"bootstrap/js/dist/dropdown":9}]},{},[11]);
 
-(function () {
+(function() {
     scrollToTop();
 })();
 
@@ -4350,7 +4350,7 @@ function scrollToTop() {
         });
     });
 
-    window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function() {
         showButton();
     });
 
@@ -4363,4 +4363,36 @@ function scrollToTop() {
             backToTop.classList.add("d-none");
         }
     }
+}
+
+//Search Functionality
+function searchDrivingSchool() {
+    const input = document.getElementById('search').value.toUpperCase();
+    const cardLists = document.getElementById('card-lists');
+    //console.log(cardLists);
+    const cardsArr = cardLists.getElementsByClassName('card');
+    //console.log(cardsArr);
+
+    //Looping through cards
+    for (let i = 0; i < cardsArr.length; i++) {
+        let title = cardsArr[i].querySelector(".card-body .card-title a.stretched-link");
+        console.log(title);
+
+        if (title.innerText.toUpperCase().indexOf(input) > -1) {
+            cardsArr[i].style.display = "";
+        } else {
+            cardsArr[i].style.display = "none";
+        }
+    }
+
+    //for (let i = 0; i < cardsArr.length; i++) {
+    //    let title = cardsArr[i].querySelector(".card-body .card-title a.stretched-link");
+    //    console.log(title);
+
+    //    if (title.innerText.toUpperCase().indexOf(input) > -1) {
+    //        cardsArr[i].style.display = "";
+    //    } else {
+    //        cardsArr[i].style.display = "none";
+    //    }
+    //}
 }
