@@ -3,9 +3,21 @@
     padding: 1rem 0;
 
     &__logo {
-        img {
-            width: 156px;
-            height: auto;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        h1 {
+            margin: 0;
+        }
+
+        span {
+            color: $primary;
+        }
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
         }
     }
 }

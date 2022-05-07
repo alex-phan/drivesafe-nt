@@ -2,11 +2,61 @@
     background-color: $primary;
     border-bottom: 0.5rem solid $secondary;
 
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: flex-end;
+        }
+    }
+
+    &__mobile {
+        display: block;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+
+        a {
+            position: relative;
+            display: block;
+            width: 56px;
+            height: 56px;
+
+            span,
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                right: 25%;
+                height: 4px;
+                background: white;
+                border-radius: 4px;
+            }
+
+            &:before,
+            &:after {
+                top: 30%;
+            }
+
+            &:after {
+                top: 70%;
+            }
+        }
+    }
+
     &__links {
         display: flex;
         padding: 0;
         margin: 0;
         list-style: none;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
         
         li {
             display: flex;
