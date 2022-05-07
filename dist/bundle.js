@@ -5203,10 +5203,11 @@ window.bootstrap.Offcanvas = require('bootstrap/js/dist/offcanvas');
 },{"@popperjs/core":1,"bootstrap/js/dist/base-component":2,"bootstrap/js/dist/button":3,"bootstrap/js/dist/collapse":4,"bootstrap/js/dist/dropdown":9,"bootstrap/js/dist/offcanvas":10}]},{},[12]);
 
 (function() {
-    scrollToTop();
+    initScrollToTop();
+    initPagination();
 })();
 
-function scrollToTop() {
+function initScrollToTop() {
     var backToTop = document.querySelector(".back-to-top");
     var backToTopButton = document.querySelector(".back-to-top button");
     var scrollSensor = 300;
@@ -5223,6 +5224,7 @@ function scrollToTop() {
         showButton();
     });
 
+    // hide back to top button until the window is scrolled past a certain point
     function showButton() {
         if (window.pageYOffset > scrollSensor) {
             backToTop.classList.remove("d-none");
@@ -5234,7 +5236,34 @@ function scrollToTop() {
     }
 }
 
-//Search Functionality
+function initPagination() {
+    var prevLink = document.getElementById("prev-page");
+    var nextLink = document.getElementById("next-page");
+    var cardsList = document.getElementsByClassName("cards");
+
+    prevLink.addEventListener("click", function() {
+        changePage();
+    });
+
+    nextLink.addEventListener("click", function() {
+        changePage();
+    });
+
+    // temporarily faked functionality
+    function changePage() {
+        for (let i = 0; i < cardsList.length; i++) {
+            if (cardsList[i].classList.contains("d-flex")) {
+                cardsList[i].classList.remove("d-flex");
+                cardsList[i].classList.add("d-none");
+            } else if (cardsList[i].classList.contains("d-none")) {
+                cardsList[i].classList.remove("d-none");
+                cardsList[i].classList.add("d-flex");
+            }
+        }
+    }
+}
+
+// Search
 function searchDrivingSchool() {
     const input = document.getElementById('search').value.toUpperCase();
     const cardLists = document.getElementById('card-lists');

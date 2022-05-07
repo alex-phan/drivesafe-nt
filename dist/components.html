@@ -155,7 +155,7 @@
                 </div>
                 <input type="text" placeholder="Search" id="search" onkeyup="searchDrivingSchool()">
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5" id="card-lists">
+            <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5 d-flex" id="card-lists">
                 <div class="col">
                     <div class="card">
                         <div class="card-body">
@@ -230,18 +230,91 @@
                     </div>
                 </div>
             </div>
+            <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5 d-none" id="card-lists">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="profile.html" class="stretched-link">Manila Smart Driving School</a>
+                            </h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Clyde Densel Duran<br>0422 035 821</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge--auto">Automatic</span>
+                            <span class="badge badge--manual">Manual</span>
+                            <span class="badge badge--darwin">Darwin</span>
+                            <span class="badge badge--casuarina">Casuarina</span>
+                            <span class="badge badge--palmerston">Palmerston</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="profile.html" class="stretched-link">Connie's Driving School</a>
+                            </h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Connie Cohalan<br>0403 649 407</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge--auto">Automatic</span>
+                            <span class="badge badge--manual">Manual</span>
+                            <span class="badge badge--darwin">Darwin</span>
+                            <span class="badge badge--casuarina">Casuarina</span>
+                            <span class="badge badge--palmerston">Palmerston</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="profile.html" class="stretched-link">Darwin Driving School</a>
+                            </h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Be Schopfer<br>0421 488 217</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge--darwin">Darwin</span>
+                            <span class="badge badge--casuarina">Casuarina</span>
+                            <span class="badge badge--palmerston">Palmerston</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="profile.html" class="stretched-link">Elite Driving School</a>
+                            </h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Will Kinslow<br>0408 821 556</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <span class="badge badge--auto">Automatic</span>
+                            <span class="badge badge--manual">Manual</span>
+                            <span class="badge badge--darwin">Darwin</span>
+                            <span class="badge badge--casuarina">Casuarina</span>
+                            <span class="badge badge--palmerston">Palmerston</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ul class="pagination d-flex justify-content-center">
                 <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
+                    <a class="page-link" href="#" aria-label="Previous" id="prev-page">
+                        <span aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
                     </a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
+                    <a class="page-link" href="#" aria-label="Next" id="next-page">
+                        <span aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
                     </a>
                 </li>
             </ul>

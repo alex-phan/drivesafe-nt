@@ -10,6 +10,17 @@ $font-family-base: 'Lato', var(--bs-font-sans-serif);
 // Cards
 $card-height: 100%;
 
+// Pagination
+$pagination-color: #fff;
+$pagination-bg: $secondary;
+$pagination-border-width: 0;
+
+$pagination-focus-color: #fff;
+$pagination-focus-bg: $primary;
+
+$pagination-hover-color: #fff;
+$pagination-hover-bg: $primary;
+
 // Accordions
 $accordion-border-width: 0;
 
