@@ -16,21 +16,76 @@
     <header class="header">
         <div class="container">
             <a href="index.html" class="header__logo">
-                <img src="https://www.drivesafe.nt.gov.au/sites/default/files/uploads/logo-new.png" alt="logo" width="222" height="227">
+                <h1><span>Drive</span>Safe NT</h1>
             </a>
         </div>
     </header>
 
+    <nav class="mobile-nav d-none">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="components.html" class="active">Components</a>
+                <ul>
+                    <li>
+                        <a href="components.html#cards-instructors">Cards - Instructors</a>
+                    </li>
+                    <li>
+                        <a href="components.html#cards-classes">Cards - Classes</a>
+                    </li>
+                    <li>
+                        <a href="components.html#cards-communities">Cards - Communities</a>
+                    </li>
+                    <li>
+                        <a href="components.html#ratings">Ratings</a>
+                    </li>
+                    <li>
+                        <a href="components.html#accordions">Accordions</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
     <nav class="main-nav">
         <div class="container">
-            <ul class="main-nav__links">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="components.html" class="active">Components</a>
-                </li>
-            </ul>
+                <div class="main-nav__wrapper">
+                <ul class="main-nav__links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="components.html" class="active">
+                            Components
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="components.html#cards-instructors">Cards - Instructors</a>
+                            </li>
+                            <li>
+                                <a href="components.html#cards-classes">Cards - Classes</a>
+                            </li>
+                            <li>
+                                <a href="components.html#cards-communities">Cards - Communities</a>
+                            </li>
+                            <li>
+                                <a href="components.html#ratings">Ratings</a>
+                            </li>
+                            <li>
+                                <a href="components.html#accordions">Accordions</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="main-nav__mobile">
+                    <a href="#">
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
 
