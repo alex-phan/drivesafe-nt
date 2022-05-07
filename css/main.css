@@ -8833,7 +8833,6 @@ progress {
   right: 30px;
   z-index: 100;
   transition: 1s;
-  display: none;
 }
 @media (max-width: 767.98px) {
   .back-to-top {
@@ -8884,6 +8883,25 @@ progress {
   margin: 0;
   list-style: none;
 }
+.main-nav__links li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.main-nav__links li ul {
+  position: absolute;
+  top: 100%;
+  background-color: #bb2026;
+  padding: 0;
+  width: 250px;
+  display: none;
+}
+.main-nav__links li ul a {
+  width: 100%;
+}
+.main-nav__links li:hover ul {
+  display: block;
+}
 .main-nav__links a {
   color: #fff;
   font-weight: bold;
@@ -8898,6 +8916,9 @@ progress {
 .main-nav__links a.active {
   border-bottom: 0.5rem solid #bb2026;
   margin-bottom: -0.5rem;
+}
+.main-nav__links a i {
+  margin-left: 0.5rem;
 }
 
 .ratings ul {
