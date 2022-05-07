@@ -13,6 +13,42 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="mobile-nav">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobile-menu" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h3>Menu</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="mobile-nav__links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="components.html">Components</a>
+                        <ul>
+                            <li>
+                                <a href="components.html#cards-instructors">Cards - Instructors</a>
+                            </li>
+                            <li>
+                                <a href="components.html#cards-classes">Cards - Classes</a>
+                            </li>
+                            <li>
+                                <a href="components.html#cards-communities">Cards - Communities</a>
+                            </li>
+                            <li>
+                                <a href="components.html#ratings">Ratings</a>
+                            </li>
+                            <li>
+                                <a href="components.html#accordions">Accordions</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <header class="header">
         <div class="container">
             <a href="index.html" class="header__logo">
@@ -21,43 +57,15 @@
         </div>
     </header>
 
-    <nav class="mobile-nav d-none">
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="components.html" class="active">Components</a>
-                <ul>
-                    <li>
-                        <a href="components.html#cards-instructors">Cards - Instructors</a>
-                    </li>
-                    <li>
-                        <a href="components.html#cards-classes">Cards - Classes</a>
-                    </li>
-                    <li>
-                        <a href="components.html#cards-communities">Cards - Communities</a>
-                    </li>
-                    <li>
-                        <a href="components.html#ratings">Ratings</a>
-                    </li>
-                    <li>
-                        <a href="components.html#accordions">Accordions</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
     <nav class="main-nav mb-5">
         <div class="container">
                 <div class="main-nav__wrapper">
                 <ul class="main-nav__links">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" class="active">Home</a>
                     </li>
                     <li>
-                        <a href="components.html" class="active">
+                        <a href="components.html">
                             Components
                             <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                         </a>
@@ -81,7 +89,7 @@
                     </li>
                 </ul>
                 <div class="main-nav__mobile">
-                    <a href="#">
+                    <a data-bs-toggle="offcanvas" href="#mobile-menu" role="button" aria-controls="offcanvasExample">
                         <span aria-hidden="true"></span>
                     </a>
                 </div>

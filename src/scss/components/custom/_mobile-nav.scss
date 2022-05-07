@@ -1,0 +1,28 @@
+.mobile-nav {
+    h3 {
+        margin: 0;
+    }
+
+    &__links {
+        list-style: none;
+        padding: 0;
+
+        ul {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+    
+        a {
+            color: $white;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+            border-bottom: 1px solid lighten($primary, 30%);
+
+            &:hover {
+                background-color: darken($primary, 5%);
+                transition: 0.2s;
+            }
+        }
+    }
+}
