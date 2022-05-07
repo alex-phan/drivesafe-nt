@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <!-- styles -->
     <link href="css/main.css" rel="stylesheet">
 </head>
+
 <body>
     <nav class="mobile-nav">
         <div class="offcanvas offcanvas-end" tabindex="-1" id="mobile-menu" aria-labelledby="offcanvasExampleLabel">
@@ -52,7 +54,7 @@
     <header class="header">
         <div class="container">
             <a href="index.html" class="header__logo">
-                <h1><span>Drive</span>Safe NT</h1> 
+                <h1><span>Drive</span>Safe NT</h1>
             </a>
         </div>
     </header>
@@ -151,9 +153,9 @@
                         </li>
                     </ul>
                 </div>
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search" id="search" onkeyup="searchDrivingSchool()">
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5" id="card-lists">
                 <div class="col">
                     <div class="card">
                         <div class="card-body">
@@ -358,4 +360,5 @@
     <!-- scripts -->
     <script src="bundle.js" type="text/javascript"></script>
 </body>
+
 </html>
