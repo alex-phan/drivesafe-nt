@@ -4340,7 +4340,7 @@ window.bootstrap.Dropdown = require('bootstrap/js/dist/dropdown');
 function scrollToTop() {
     var backToTop = document.querySelector(".back-to-top");
     var backToTopButton = document.querySelector(".back-to-top button");
-    var scrollSensor = 500;
+    var scrollSensor = 300;
 
     backToTopButton.addEventListener("click", function() {
         scroll({
