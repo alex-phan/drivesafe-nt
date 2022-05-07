@@ -1,10 +1,11 @@
 window.bootstrap = {};
 
 require("@popperjs/core");
+window.bootstrap.BaseComponent = require('bootstrap/js/dist/base-component');
 // window.bootstrap.Alert = require('bootstrap/js/dist/alert');
-// window.bootstrap.Button = require('bootstrap/js/dist/button');
+window.bootstrap.Button = require('bootstrap/js/dist/button');
 // window.bootstrap.Carousel = require('bootstrap/js/dist/carousel');
-// window.bootstrap.Collapse = require('bootstrap/js/dist/collapse');
+window.bootstrap.Collapse = require('bootstrap/js/dist/collapse');
 window.bootstrap.Dropdown = require('bootstrap/js/dist/dropdown');
 // window.bootstrap.Modal = require('bootstrap/js/dist/modal');
 // window.bootstrap.Offcanvas = require('bootstrap/js/dist/offcanvas');
