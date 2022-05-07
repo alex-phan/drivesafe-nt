@@ -7,6 +7,31 @@
         padding: 0;
         margin: 0;
         list-style: none;
+        
+        li {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            ul {
+                position: absolute;
+                top: 100%;
+                background-color: $primary;
+                padding: 0;
+                width: 250px;
+                display: none;
+
+                a {
+                    width: 100%;
+                }
+            }
+
+            &:hover {
+                ul {
+                    display: block;
+                }
+            }
+        }
 
         a {
             color: $white;
@@ -23,6 +48,10 @@
             &.active {
                 border-bottom: 0.5rem solid $primary;
                 margin-bottom: -0.5rem;
+            }
+            
+            i {
+                margin-left: 0.5rem;
             }
         }
     }
