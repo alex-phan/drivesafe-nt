@@ -4333,3 +4333,18 @@ window.bootstrap.Dropdown = require('bootstrap/js/dist/dropdown');
 // window.bootstrap.Tooltip = require('bootstrap/js/dist/tooltip');
 },{"@popperjs/core":1,"bootstrap/js/dist/base-component":2,"bootstrap/js/dist/button":3,"bootstrap/js/dist/collapse":4,"bootstrap/js/dist/dropdown":9}]},{},[11]);
 
+(function () {
+    scrollToTop();
+})();
+
+function scrollToTop() {
+    var backToTopButton = document.querySelector('.back-to-top button');
+
+    backToTopButton.addEventListener('click', function() {
+        scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        });
+    });
+}
