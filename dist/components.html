@@ -140,16 +140,19 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                         <li>
-                            <a class="dropdown-item" href="#">Darwin</a>
+                            <a class="dropdown-item filter-dropdown" href="#" data-filter="all" onclick="locFilter()">All</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">Casuarina</a>
+                            <a class="dropdown-item filter-dropdown" href="#" data-filter="darwin" onclick="locFilter()">Darwin</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">Palmerston</a>
+                            <a class="dropdown-item filter-dropdown" href="#" data-filter="casuarina" onclick="locFilter()">Casuarina</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="#">Nhulunbuy</a>
+                            <a class="dropdown-item filter-dropdown" href="#" data-filter="palmerston" onclick="locFilter()">Palmerston</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item filter-dropdown" href="#" data-filter="nhulunbuy" onclick="locFilter()">Nhulunbuy</a>
                         </li>
                     </ul>
                 </div>
@@ -157,7 +160,7 @@
                 <input type="text" placeholder="Search" id="search2" onkeyup="searchDrivingSchool2()" class="cards d-none">
             </div>
             <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5 d-flex" id="card-lists">
-                <div class="col">
+                <div class="col darwin casuarina palmerston">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -176,8 +179,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
+                <div class="col casuarina dawrin">
+                    <div class="card ">
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="profile.html" class="stretched-link">ABC Driving School Darwin</a>
@@ -190,13 +193,12 @@
                         <div class="card-footer">
                             <span class="badge badge--auto">Automatic</span>
                             <span class="badge badge--manual">Manual</span>
-                            <span class="badge badge--darwin">Darwin</span>
                             <span class="badge badge--casuarina">Casuarina</span>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
+                <div class="col casuarina darwin">
+                    <div class="card ">
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="profile.html" class="stretched-link">Achieve Driving Academy NT</a>
@@ -212,8 +214,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
+                <div class="col darwin casuarina palmerston nhulunbuy">
+                    <div class="card ">
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="profile.html" class="stretched-link">Andrew's Driving School</a>
@@ -232,7 +234,7 @@
                 </div>
             </div>
             <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5 d-none" id="card-lists2">
-                <div class="col">
+                <div class="col darwin casuarina palmerston">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -242,7 +244,7 @@
                                 <li class="list-group-item">Clyde Densel Duran<br>0422 035 821</li>
                             </ul>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer casuarina palmerston">
                             <span class="badge badge--auto">Automatic</span>
                             <span class="badge badge--manual">Manual</span>
                             <span class="badge badge--darwin">Darwin</span>
@@ -251,7 +253,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col darwin casuarina palmerston">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -270,8 +272,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
+                <div class="col darwin casuarina palmerston">
+                    <div class="card ">
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="profile.html" class="stretched-link">Darwin Driving School</a>
@@ -287,7 +289,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col darwin casuarina palmerston">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">
