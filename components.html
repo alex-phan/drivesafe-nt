@@ -334,29 +334,34 @@
         <h2>Reviews</h2>
     </div>
 
-    <section class="ratings mb-5">
+    <section class="review mb-5">
         <div class="container">
-            <ul>
-                <li>
-                    <i class="fa-solid fa-star" id="1star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                </li>
-                <li>
-                    <i class="fa-regular fa-star" id="2star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                </li>
-                <li>
-                    <i class="fa-regular fa-star" id="3star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                </li>
-                <li>
-                    <i class="fa-regular fa-star" id="4star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                </li>
-                <li>
-                    <i class="fa-regular fa-star" id="5star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                </li>
-            </ul>
-            <div class="row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-                <textarea class="form-control" rows="3" id="reviewComment" placeholder="Enter your comment"></textarea>
+            <div class="review__wrapper">
+                <h3>Rating</h3>
+                <ul class="review__rating mb-3">
+                    <li>
+                        <i class="fa-solid fa-star" id="1star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-star" id="2star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-star" id="3star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-star" id="4star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-star" id="5star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                    </li>
+                </ul>
+
+                <h3>Comment</h3>
+                <div class="review__comment">
+                    <textarea class="form-control" id="reviewComment" placeholder="What is your feedback?"></textarea>
+                    <button onclick="clearComment()" type="button" class="btn btn-success">Submit</button>
+                </div>
             </div>
-            <button onclick="clearComment()" type="button" class="btn btn-sm btn-success">Submit</button>
         </div>
     </section>
 
