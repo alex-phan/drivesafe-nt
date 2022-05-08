@@ -5397,12 +5397,10 @@ function clearComment(item) {
 }
 
 
-
-
 //Filter functionality
 function locFilter() {
     const btns = document.querySelectorAll('.filter-dropdown');
-    const cardsArr = document.querySelectorAll('.col');
+    const cardsArr = document.querySelectorAll('.filter-options');
     console.log(btns);
 
     // const search = document.getElementById(search);
