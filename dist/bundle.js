@@ -5307,8 +5307,8 @@ function searchDrivingSchool2() {
 
 // Star rating functionality
 function markStar(item) {
+    console.log(item)
     count = item.id[0];
-
     sessionStorage.starRating = count;
     var subid = item.id.substring(1);
     for (var i = 0; i < 5; i++) {
@@ -5367,4 +5367,9 @@ function starOut(item) {
 
 
     }
+}
+
+//textArea functionality
+function clearComment(item) {
+    document.getElementById("reviewComment").value = "";
 }
