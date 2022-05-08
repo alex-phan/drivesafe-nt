@@ -1,0 +1,11 @@
+.nav-link {
+    color: $white;
+    font-weight: bold;
+    padding: 1rem;
+    
+    &:hover {
+        color: $white;
+        background-color: $secondary;
+        transition: 0.2s;
+    }
+}
