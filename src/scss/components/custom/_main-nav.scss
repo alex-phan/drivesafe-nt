@@ -4,6 +4,7 @@
 
     &__wrapper {
         display: flex;
+        align-items: center;
         justify-content: space-between;
 
         @include media-breakpoint-down(lg) {
@@ -11,6 +12,24 @@
         }
     }
 
+    &__login {
+        a {
+            color: $white;
+            text-decoration: none;
+            padding: 1rem;
+            margin: 0;
+            display: block;
+
+            &:hover {
+                background-color: $secondary;
+            }
+
+            i {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    
     &__mobile {
         display: block;
 
