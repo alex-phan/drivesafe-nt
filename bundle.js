@@ -5699,7 +5699,6 @@ function searchDrivingSchool2() {
 }
 
 //Filter functionality
-// Search
 function filterDrivingSchool() {
     const input = document.getElementById('search').value.toUpperCase();
     const cardLists = document.getElementById('card-lists');
@@ -5710,7 +5709,7 @@ function filterDrivingSchool() {
     //Looping through cards
     for (let i = 0; i < cardsArr.length; i++) {
         let title = cardsArr[i].querySelector(".card-body .card-title a.stretched-link");
-        console.log(title);
+        //console.log(title);
 
         if (title.innerText.toUpperCase().indexOf(input) > -1) {
             cardsArr[i].style.display = "";
@@ -5794,7 +5793,7 @@ function clearComment(item) {
 function locFilter() {
     const btns = document.querySelectorAll('.filter-dropdown');
     const cardsArr = document.querySelectorAll('.filter-options');
-    console.log(btns);
+    //console.log(btns);
 
     // const search = document.getElementById(search);
 
@@ -5820,4 +5819,51 @@ function locFilter() {
         });
     };
 
+}
+
+//Sorting functionality
+const cardLists = document.getElementById('card-lists');
+const cardsArr = cardLists.getElementsByClassName('col');
+const sortA = cardsArr[0].outerHTML;
+const sortB = cardsArr[3].outerHTML;
+const sortC = cardsArr[1].outerHTML;
+const sortD = cardsArr[2].outerHTML;
+
+function sortingByTitleAtoZ() {
+    const cardLists = document.getElementById('card-lists');
+    //console.log(cardLists.innerHTML);
+    const cardsArr = cardLists.getElementsByClassName('col');
+    //console.log(cardsArr)
+
+    //console.log(a)
+    cardLists.innerHTML = "";
+    //console.log(cardLists.innerHTML)
+    cardLists.innerHTML = sortA + sortB + sortC + sortD;
+}
+
+//Sorting functionality
+// Search
+function sortingByTitleZtoA() {
+    const cardLists = document.getElementById('card-lists');
+    //console.log(cardLists.innerHTML);
+    const cardsArr = cardLists.getElementsByClassName('col');
+    //console.log(cardsArr)
+
+    cardLists.innerHTML = "";
+    //console.log(cardLists.innerHTML)
+    cardLists.innerHTML = sortD + sortC + sortB + sortA;
+}
+
+//Sorting functionality
+// Search
+function defaultSorting() {
+    const cardLists = document.getElementById('card-lists');
+    //console.log(cardLists.innerHTML);
+    const cardsArr = cardLists.getElementsByClassName('col');
+    //console.log(cardsArr)
+
+    //console.log(a)
+    cardLists.innerHTML = "";
+    //console.log(cardLists.innerHTML)
+    cardLists.innerHTML = sortA + sortC + sortD + sortB;
 }
