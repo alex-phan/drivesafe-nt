@@ -5295,7 +5295,7 @@ function searchDrivingSchool2() {
     //Looping through cards
     for (let i = 0; i < cardsArr.length; i++) {
         let title = cardsArr[i].querySelector(".card-body .card-title a.stretched-link");
-        console.log(title);
+        //console.log(title);
 
         if (title.innerText.toUpperCase().indexOf(input) > -1) {
             cardsArr[i].style.display = "";
@@ -5307,7 +5307,7 @@ function searchDrivingSchool2() {
 
 // Star rating functionality
 function markStar(item) {
-    console.log(item)
+    //console.log(item)
     count = item.id[0];
     sessionStorage.starRating = count;
     var subid = item.id.substring(1);
