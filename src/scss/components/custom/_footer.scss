@@ -1,0 +1,53 @@
+.footer {
+    color: $white;
+    background-color: $secondary;
+    padding: 3rem 0;
+    border-top: 6px solid $primary;
+
+    &__top {
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        a {
+            color: $white;
+            text-underline-offset: 4px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    
+        > div {
+            &:last-child {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: flex-end;
+                gap: 1rem;
+
+                @include media-breakpoint-down(md) {
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                img {
+                    width: 209px;
+                    height: 75px;
+                }
+
+                i {
+                    color: $primary;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+    
+    hr {
+        color: $white;
+        opacity: 1;
+        margin: 3rem 0 1rem 0;
+    }
+}
