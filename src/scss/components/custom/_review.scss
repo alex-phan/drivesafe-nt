@@ -6,11 +6,6 @@
     &__wrapper {
         display: flex;
         flex-direction: column;
-        padding: 0 6rem;
-
-        @include media-breakpoint-down(md) {
-            padding: 0;
-        }
     }
 
     &__rating {
