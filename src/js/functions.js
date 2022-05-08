@@ -101,6 +101,28 @@ function searchDrivingSchool2() {
     }
 }
 
+//Filter functionality
+// Search
+function filterDrivingSchool() {
+    const input = document.getElementById('search').value.toUpperCase();
+    const cardLists = document.getElementById('card-lists');
+    //console.log(cardLists);
+    const cardsArr = cardLists.getElementsByClassName('col');
+    //console.log(cardsArr);
+
+    //Looping through cards
+    for (let i = 0; i < cardsArr.length; i++) {
+        let title = cardsArr[i].querySelector(".card-body .card-title a.stretched-link");
+        console.log(title);
+
+        if (title.innerText.toUpperCase().indexOf(input) > -1) {
+            cardsArr[i].style.display = "";
+        } else {
+            cardsArr[i].style.display = "none";
+        }
+    }
+}
+
 // Star rating functionality
 function markStar(item) {
     //console.log(item)
@@ -168,4 +190,39 @@ function starOut(item) {
 //textArea functionality
 function clearComment(item) {
     document.getElementById("reviewComment").value = "";
+}
+
+
+
+
+//Filter functionality
+function locFilter() {
+    const btns = document.querySelectorAll('.filter-dropdown');
+    const cardsArr = document.querySelectorAll('.col');
+    console.log(btns);
+
+    // const search = document.getElementById(search);
+
+    for (i = 0; i < btns.length; i++) {
+
+        btns[i].addEventListener('click', (e) => {
+            e.preventDefault()
+
+            const filter = e.target.dataset.filter;
+            //console.log(filter);
+
+            cardsArr.forEach((location) => {
+                if (filter === 'all') {
+                    location.style.display = 'block'
+                } else {
+                    if (location.classList.contains(filter)) {
+                        location.style.display = 'block'
+                    } else {
+                        location.style.display = 'none'
+                    }
+                }
+            });
+        });
+    };
+
 }
