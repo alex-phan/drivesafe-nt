@@ -100,3 +100,67 @@ function searchDrivingSchool2() {
         }
     }
 }
+
+// Star rating functionality
+function markStar(item) {
+    count = item.id[0];
+
+    sessionStorage.starRating = count;
+    var subid = item.id.substring(1);
+    for (var i = 0; i < 5; i++) {
+        if (i < count) {
+            if (document.getElementById((i + 1) + subid).classList.contains("fa-regular")) {
+                document.getElementById((i + 1) + subid).classList.remove("fa-regular");
+                document.getElementById((i + 1) + subid).classList.add("fa-solid");
+            }
+        } else {
+            if (document.getElementById((i + 1) + subid).classList.contains("fa-solid")) {
+                document.getElementById((i + 1) + subid).classList.remove("fa-solid");
+                document.getElementById((i + 1) + subid).classList.add("fa-regular");
+            }
+        }
+
+
+    }
+}
+
+function starOver(item) {
+    count = item.id[0];
+    sessionStorage.overStarRating = count;
+    var subid = item.id.substring(1);
+    for (var i = 0; i < 5; i++) {
+        if (i < count) {
+            if (document.getElementById((i + 1) + subid).classList.contains("fa-regular")) {
+                document.getElementById((i + 1) + subid).classList.remove("fa-regular");
+                document.getElementById((i + 1) + subid).classList.add("fa-solid");
+            }
+        } else {
+            if (document.getElementById((i + 1) + subid).classList.contains("fa-solid")) {
+                document.getElementById((i + 1) + subid).classList.remove("fa-solid");
+                document.getElementById((i + 1) + subid).classList.add("fa-regular");
+            }
+        }
+
+
+    }
+}
+
+function starOut(item) {
+    count = sessionStorage.getItem("starRating");
+    var subid = item.id.substring(1);
+    for (var i = 0; i < 5; i++) {
+        if (i < count) {
+            if (document.getElementById((i + 1) + subid).classList.contains("fa-regular")) {
+                document.getElementById((i + 1) + subid).classList.remove("fa-regular");
+                document.getElementById((i + 1) + subid).classList.add("fa-solid");
+            }
+        } else {
+            if (document.getElementById((i + 1) + subid).classList.contains("fa-solid")) {
+                document.getElementById((i + 1) + subid).classList.remove("fa-solid");
+                document.getElementById((i + 1) + subid).classList.add("fa-regular");
+            }
+        }
+
+
+    }
+}
