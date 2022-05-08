@@ -1,0 +1,10 @@
+// keeps footer stuck to the bottom if there is not enough content to populate the page
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    main {
+        flex: 1 0 auto;
+    }
+}
