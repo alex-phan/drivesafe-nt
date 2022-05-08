@@ -9044,12 +9044,57 @@ progress {
 }
 .content a {
   font-weight: bold;
+  text-underline-offset: 4px;
 }
 .content a:hover {
   text-decoration: none;
 }
 .content i {
   margin-left: 0.5rem;
+}
+
+.footer {
+  color: #fff;
+  background-color: #414042;
+  padding: 3rem 0;
+  border-top: 6px solid #bb2026;
+}
+.footer__top ul {
+  list-style: none;
+  padding: 0;
+}
+.footer__top a {
+  color: #fff;
+  text-underline-offset: 4px;
+}
+.footer__top a:hover {
+  text-decoration: none;
+}
+.footer__top > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+@media (max-width: 767.98px) {
+  .footer__top > div:last-child {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer__top > div:last-child img {
+  width: 209px;
+  height: 75px;
+}
+.footer__top > div:last-child i {
+  color: #bb2026;
+  margin-right: 0.5rem;
+}
+.footer hr {
+  color: #fff;
+  opacity: 1;
+  margin: 3rem 0 1rem 0;
 }
 
 .header {
