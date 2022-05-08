@@ -155,59 +155,63 @@
 
     <section class="mb-5">
         <div class="container">
-            <div class="d-flex justify-content-end mb-3">
-                <div class="dropdown mr-auto me-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sort
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" onclick="defaultSorting()">Default</a></li>
-                        <li>
-                            <a class="dropdown-item" onclick="sortingByTitleAtoZ()">A to Z</a></li>
-                        <li>
-                            <a class="dropdown-item" onclick="sortingByTitleZtoA()">Z to A</a></li>
-                        </li>
-                    </ul>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-3 gap-3">
+                <div class="d-flex gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" onclick="defaultSorting()">Default</a></li>
+                            <li>
+                                <a class="dropdown-item" onclick="sortingByTitleAtoZ()">A to Z</a></li>
+                            <li>
+                                <a class="dropdown-item" onclick="sortingByTitleZtoA()">Z to A</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="text" placeholder="Search" id="search" onkeyup="searchDrivingSchool()" class="cards d-flex">
+                    <input type="text" placeholder="Search" id="search2" onkeyup="searchDrivingSchool2()" class="cards d-none">
                 </div>
-                <div class="dropdown me-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Transmission
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item filter-dropdown" href="#" data-filter="all" onclick="locFilter()">All</a></li>
-                        <li>
-                            <a class="dropdown-item filter-dropdown" href="#" data-filter="automatic" onclick="locFilter()">Automatic</a></li>
-                        <li>
-                            <a class="dropdown-item filter-dropdown" href="#" data-filter="manual" onclick="locFilter()">Manual</a></li>
-                        </li>
-                    </ul>
+                <div class="d-flex gap-3">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Transmission
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item filter-dropdown" href="#" data-filter="all" onclick="locFilter()">All</a></li>
+                            <li>
+                                <a class="dropdown-item filter-dropdown" href="#" data-filter="automatic" onclick="locFilter()">Automatic</a></li>
+                            <li>
+                                <a class="dropdown-item filter-dropdown" href="#" data-filter="manual" onclick="locFilter()">Manual</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            Location
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <li>
+                                <a class="dropdown-item filter-dropdown" href="#" data-filter="all" onclick="locFilter()">All</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item filter-dropdown" href="#" data-filter="darwin" onclick="locFilter()">Darwin</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item filter-dropdown" href="#" data-filter="casuarina" onclick="locFilter()">Casuarina</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item filter-dropdown" href="#" data-filter="palmerston" onclick="locFilter()">Palmerston</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item filter-dropdown" href="#" data-filter="nhulunbuy" onclick="locFilter()">Nhulunbuy</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="dropdown me-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                        Location
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                        <li>
-                            <a class="dropdown-item filter-dropdown" href="#" data-filter="all" onclick="locFilter()">All</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item filter-dropdown" href="#" data-filter="darwin" onclick="locFilter()">Darwin</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item filter-dropdown" href="#" data-filter="casuarina" onclick="locFilter()">Casuarina</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item filter-dropdown" href="#" data-filter="palmerston" onclick="locFilter()">Palmerston</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item filter-dropdown" href="#" data-filter="nhulunbuy" onclick="locFilter()">Nhulunbuy</a>
-                        </li>
-                    </ul>
-                </div>
-                <input type="text" placeholder="Search" id="search" onkeyup="searchDrivingSchool()" class="cards d-flex">
-                <input type="text" placeholder="Search" id="search2" onkeyup="searchDrivingSchool2()" class="cards d-none">
             </div>
             <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5 d-flex" id="card-lists">
                 <div class="col filter-options manual automatic darwin casuarina palmerston">
