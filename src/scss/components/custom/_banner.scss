@@ -1,8 +1,51 @@
 .banner {
-    background-color: darkgrey; // temporary - will replace with an image
+    background: url(../assets/800x800.png);
     padding: 6rem 0;
+
+    @include media-breakpoint-down(lg) {
+        padding: 3rem 0;
+    }
+
+    @include media-breakpoint-down(md) {
+        img {
+            display: none;
+        }
+    }
 
     &__content {
         color: $white;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3rem;
+    }
+
+    &__tiles {
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            background-color: $white;
+            padding: 2rem 0.5rem;
+            margin: 0 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.25rem;
+                padding: 1rem;
+            }
+
+            &:hover {
+                color: $primary;
+                margin: 0;
+                transition: 0.2s;
+            }
+        }
     }
 }

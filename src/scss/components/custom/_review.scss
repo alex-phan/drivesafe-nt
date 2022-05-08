@@ -1,0 +1,48 @@
+.review {
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0 6rem;
+
+        @include media-breakpoint-down(md) {
+            padding: 0;
+        }
+    }
+
+    &__rating {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    
+        li {
+            margin: 0;
+        }
+    
+        i {
+            font-size: 1.5rem;
+    
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    
+        .fa-solid {
+            color: $yellow;
+        }
+    }
+
+    &__comment {
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+            padding: 0.5rem;
+            min-height: 100px;
+        }
+    }
+}

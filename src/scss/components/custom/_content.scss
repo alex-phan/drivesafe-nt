@@ -1,0 +1,24 @@
+.content {
+    h2 {
+        color: $primary;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    img {
+        width: 100%;
+    }
+    
+    a {
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    i {
+        margin-left: 0.5rem;
+    }
+}
