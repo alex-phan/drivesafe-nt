@@ -128,9 +128,11 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="#">Automatic</a></li>
+                            <a class="dropdown-item filter-dropdown" href="#" data-filter="all" onclick="locFilter()">All</a></li>
                         <li>
-                            <a class="dropdown-item" href="#">Manual</a></li>
+                            <a class="dropdown-item filter-dropdown" href="#" data-filter="automatic" onclick="locFilter()">Automatic</a></li>
+                        <li>
+                            <a class="dropdown-item filter-dropdown" href="#" data-filter="manual" onclick="locFilter()">Manual</a></li>
                         </li>
                     </ul>
                 </div>
@@ -160,81 +162,89 @@
                 <input type="text" placeholder="Search" id="search2" onkeyup="searchDrivingSchool2()" class="cards d-none">
             </div>
             <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5 d-flex" id="card-lists">
-                <div class="col darwin casuarina palmerston">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="profile.html" class="stretched-link">A1 Territory Driving School</a>
-                            </h4>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Dharma Velusamy<br>0403 419 709</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <span class="badge badge--auto">Automatic</span>
-                            <span class="badge badge--manual">Manual</span>
-                            <span class="badge badge--darwin">Darwin</span>
-                            <span class="badge badge--casuarina">Casuarina</span>
-                            <span class="badge badge--palmerston">Palmerston</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col casuarina dawrin">
-                    <div class="card ">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="profile.html" class="stretched-link">ABC Driving School Darwin</a>
-                            </h4>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Raj Jassal<br>0415 131 313</li>
-                                <li class="list-group-item">Selma Bukhari<br>0466 332 376</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <span class="badge badge--auto">Automatic</span>
-                            <span class="badge badge--manual">Manual</span>
-                            <span class="badge badge--casuarina">Casuarina</span>
+                <div class="filter-options manual automatic darwin casuarina palmerston">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="profile.html" class="stretched-link">A1 Territory Driving School</a>
+                                </h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Dharma Velusamy<br>0403 419 709</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <span class="badge badge--auto">Automatic</span>
+                                <span class="badge badge--manual">Manual</span>
+                                <span class="badge badge--darwin">Darwin</span>
+                                <span class="badge badge--casuarina">Casuarina</span>
+                                <span class="badge badge--palmerston">Palmerston</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col casuarina darwin">
-                    <div class="card ">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="profile.html" class="stretched-link">Achieve Driving Academy NT</a>
-                            </h4>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Allan Futuni<br>0414 737 858</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <span class="badge badge--auto">Automatic</span>
-                            <span class="badge badge--darwin">Darwin</span>
-                            <span class="badge badge--casuarina">Casuarina</span>
+                <div class="filter-options manual automatic casuarina dawrin">
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="profile.html" class="stretched-link">ABC Driving School Darwin</a>
+                                </h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Raj Jassal<br>0415 131 313</li>
+                                    <li class="list-group-item">Selma Bukhari<br>0466 332 376</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <span class="badge badge--auto">Automatic</span>
+                                <span class="badge badge--manual">Manual</span>
+                                <span class="badge badge--casuarina">Casuarina</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col darwin casuarina palmerston nhulunbuy">
-                    <div class="card ">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="profile.html" class="stretched-link">Andrew's Driving School</a>
-                            </h4>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Andrew Szauer<br>0414 455 634</li>
-                            </ul>
+                <div class="filter-options automatic casuarina darwin">
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="profile.html" class="stretched-link">Achieve Driving Academy NT</a>
+                                </h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Allan Futuni<br>0414 737 858</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <span class="badge badge--auto">Automatic</span>
+                                <span class="badge badge--darwin">Darwin</span>
+                                <span class="badge badge--casuarina">Casuarina</span>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <span class="badge badge--darwin">Darwin</span>
-                            <span class="badge badge--casuarina">Casuarina</span>
-                            <span class="badge badge--palmerston">Palmerston</span>
-                            <span class="badge badge--nhulunbuy">Nhulunbuy</span>
+                    </div>
+                </div>
+                <div class="filter-options darwin casuarina palmerston nhulunbuy">
+                    <div class="col ">
+                        <div class="card ">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="profile.html" class="stretched-link">Andrew's Driving School</a>
+                                </h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Andrew Szauer<br>0414 455 634</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <span class="badge badge--darwin">Darwin</span>
+                                <span class="badge badge--casuarina">Casuarina</span>
+                                <span class="badge badge--palmerston">Palmerston</span>
+                                <span class="badge badge--nhulunbuy">Nhulunbuy</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mb-5 d-none" id="card-lists2">
-                <div class="col darwin casuarina palmerston">
+                <div class="col manual automatic darwin casuarina palmerston">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -253,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col darwin casuarina palmerston">
+                <div class="col manual automatic darwin casuarina palmerston">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -272,7 +282,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col darwin casuarina palmerston">
+                <div class="col automatic darwin casuarina palmerston">
                     <div class="card ">
                         <div class="card-body">
                             <h4 class="card-title">
@@ -289,7 +299,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col darwin casuarina palmerston">
+                <div class="col manual automatic darwin casuarina palmerston">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">
