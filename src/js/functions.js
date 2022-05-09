@@ -234,10 +234,10 @@ const sortD = cardsArr[3].outerHTML;
 
 const cardLists2 = document.getElementById('card-lists2');
 const cardsArr2 = cardLists2.getElementsByClassName('col');
-const sortE = cardsArr2[0].outerHTML;
-const sortF = cardsArr2[1].outerHTML;
-const sortG = cardsArr2[2].outerHTML;
-const sortH = cardsArr2[3].outerHTML;
+const sortE = cardsArr2[1].outerHTML;
+const sortF = cardsArr2[2].outerHTML;
+const sortG = cardsArr2[3].outerHTML;
+const sortH = cardsArr2[0].outerHTML;
 
 function sortingByTitleAtoZ() {
     const cardLists = document.getElementById('card-lists');
@@ -293,5 +293,5 @@ function defaultSorting() {
     const cardsArr2 = cardLists2.getElementsByClassName('col');
 
     cardLists2.innerHTML = "";
-    cardLists2.innerHTML = sortE + sortF + sortG + sortH;
+    cardLists2.innerHTML = sortH + sortE + sortF + sortG;
 }
