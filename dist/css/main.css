@@ -9534,7 +9534,6 @@ progress {
   min-height: 200px;
   border-bottom: 0.5rem solid #bb2026;
 }
-
 .nav-link {
   color: #fff;
   font-weight: bold;
@@ -9553,6 +9552,10 @@ progress {
   border-bottom: 0.5rem solid #bb2026;
   padding: 0;
   z-index: 100;
+}
+
+.pagination .page-link i {
+  margin: 0;
 }
 
 .back-to-top {
@@ -9862,11 +9865,6 @@ progress {
 .review__wrapper {
   display: flex;
   flex-direction: column;
-}
-@media (max-width: 767.98px) {
-  .review__wrapper {
-    padding: 0;
-  }
 }
 .review__rating {
   list-style: none;

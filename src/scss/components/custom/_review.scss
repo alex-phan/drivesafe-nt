@@ -5,9 +5,6 @@
     &__wrapper {
         display: flex;
         flex-direction: column;
-        @include media-breakpoint-down(md) {
-            padding: 0;
-        }
     }
     &__rating {
         list-style: none;
