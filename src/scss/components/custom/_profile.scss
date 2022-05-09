@@ -1,35 +1,28 @@
 .profile {
-    &__heading3 {
-        padding-left: 3rem;
-    }
-    &__overall-rating {
+    ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        display: flex;
-        li {
-            margin: 0;
-        }
-        i {
-            font-size: 2.5rem;
-            &:hover {
-                cursor: pointer;
-            }
-        }
-        .fa-solid {
-            color: $yellow;
-        }
     }
-    &__attribute {
-        margin: 0;
-        padding: 0;
+
+    span {
+        font-weight: bold;
+    }
+
+    &__overall-rating {
         display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
         ul {
-            li {
-                margin: 0;
-                font-size: 1.5rem;
-                list-style: none;
-                padding: 0.5rem 0.5rem;
+            display: flex;
+
+            i {
+                font-size: 2rem;
+    
+                &.fas {
+                    color: $yellow;
+                }
             }
         }
     }

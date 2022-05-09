@@ -9653,9 +9653,6 @@ progress {
 .content a:hover {
   text-decoration: none;
 }
-.content i {
-  margin-left: 0.25rem;
-}
 
 .footer {
   color: #fff;
@@ -9887,44 +9884,39 @@ progress {
 .review__comment {
   display: flex;
   flex-direction: column;
-  width: 40rem;
+  width: 50%;
+}
+@media (max-width: 991.98px) {
+  .review__comment {
+    width: 100%;
+  }
 }
 .review__comment textarea {
   padding: 0.5rem;
   min-height: 100px;
 }
 
-.profile__heading3 {
-  padding-left: 3rem;
+.profile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.profile span {
+  font-weight: bold;
 }
 .profile__overall-rating {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.profile__overall-rating ul {
   display: flex;
 }
-.profile__overall-rating li {
-  margin: 0;
+.profile__overall-rating ul i {
+  font-size: 2rem;
 }
-.profile__overall-rating i {
-  font-size: 2.5rem;
-}
-.profile__overall-rating i:hover {
-  cursor: pointer;
-}
-.profile__overall-rating .fa-solid {
+.profile__overall-rating ul i.fas {
   color: #ffc107;
-}
-.profile__attribute {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.profile__attribute ul li {
-  margin: 0;
-  font-size: 1.5rem;
-  list-style: none;
-  padding: 0.5rem 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
