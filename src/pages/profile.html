@@ -42,15 +42,15 @@
                             </ul>
                         </li>
                         <li>
-                           <a href="learning.html">Learning</a>
-                           <ul>
+                            <a href="learning.html">Learning</a>
+                            <ul>
                                 <li>
                                     <a href="classes.html">Classes</a>
                                 </li>
                                 <li>
                                     <a href="instructors.html">Instructors</a>
                                 </li>
-                           </ul>
+                            </ul>
                         </li>
                         <li>
                             <a href="communities.html">Remote Community Events</a>
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </nav>
-    
+
         <header class="header">
             <div class="container">
                 <a href="index.html" class="header__logo">
@@ -70,7 +70,7 @@
                 </a>
             </div>
         </header>
-    
+
         <nav class="main-nav">
             <div class="container">
                 <div class="main-nav__wrapper">
@@ -133,7 +133,7 @@
                 </div>
             </div>
         </nav>
-    
+
         <section class="banner mb-5">
             <div class="container">
                 <div class="banner__content">
@@ -155,17 +155,103 @@
                 </div>
             </div>
         </section>
-    
+
         <main class="content">
-    
+            <section class="profile">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-md-2 g-3 mb-3">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-10 col-md-6 col-lg-4">
+                                    <img src="/assets/800x800.png" alt="">
+                                </div>
+                                <div class="col py-3 profile__attribute">
+                                    <ul d-flex justify-content-between>
+                                        <li>
+                                            <strong>Language:</strong> English, Chinese
+                                        </li>
+                                        <li>
+                                            <strong>Contact:</strong> ##########
+                                        </li>
+                                        <li>
+                                            <strong>Location:</strong> LOCATION ABC
+                                        </li>
+                                        <li>
+                                            <strong>Car Type:</strong> Automatic
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile col">
+                            <h3 class="mb-3 ps-5">Overall Rating</h3>
+                            <ul class="profile__overall-rating mb-3">
+                                <li>
+                                    <i class="fa-solid fa-star" id="1star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid  fa-star" id="2star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid  fa-star" id="3star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-star" id="4star"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star" id="5star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 class="mb-3">Bio</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit consequuntur earum nisi temporibus. Neque itaque nobis, voluptate ex facilis eum excepturi dignissimos quidem pariatur dolorum eius eos perspiciatis quod.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+            <hr>
+            <section class="review mb-5">
+                <div class="container">
+                    <div class="row justify-content-start review__wrapper ">
+                        <h3>Rating</h3>
+                        <ul class="review__rating mb-3">
+                            <li>
+                                <i class="fa-solid fa-star" id="1star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-star" id="2star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-star" id="3star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-star" id="4star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-star" id="5star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                            </li>
+                        </ul>
+
+                        <h3>Comment</h3>
+                        <div class="review__comment">
+                            <textarea class="form-control" id="reviewComment" placeholder="What is your feedback?"></textarea>
+                            <button onclick="clearComment()" type="button" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-    
+
         <div class="back-to-top d-none">
             <button>
                 <i class="fa-solid fa-chevron-up"></i>
             </button>
         </div>
-    
+
         <footer class="footer" role="contentinfo">
             <div class="container">
                 <div class="footer__top row gy-3">
@@ -207,9 +293,9 @@
                         <a href="#"><i class="fa-solid fa-chevron-up"></i>Back to top</a>
                     </div>
                 </div>
-    
+
                 <hr>
-    
+
                 <div class="footer__bottom row">
                     <p>
                         &copy; 2022 Northern Territory Government of Australia
