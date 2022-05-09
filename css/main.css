@@ -9653,6 +9653,9 @@ progress {
 .content a:hover {
   text-decoration: none;
 }
+.content a i {
+  margin-left: 0.25rem;
+}
 
 .footer {
   color: #fff;
