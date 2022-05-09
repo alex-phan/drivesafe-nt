@@ -5825,9 +5825,16 @@ function locFilter() {
 const cardLists = document.getElementById('card-lists');
 const cardsArr = cardLists.getElementsByClassName('col');
 const sortA = cardsArr[0].outerHTML;
-const sortB = cardsArr[3].outerHTML;
-const sortC = cardsArr[1].outerHTML;
-const sortD = cardsArr[2].outerHTML;
+const sortB = cardsArr[1].outerHTML;
+const sortC = cardsArr[2].outerHTML;
+const sortD = cardsArr[3].outerHTML;
+
+const cardLists2 = document.getElementById('card-lists2');
+const cardsArr2 = cardLists2.getElementsByClassName('col');
+const sortE = cardsArr2[0].outerHTML;
+const sortF = cardsArr2[1].outerHTML;
+const sortG = cardsArr2[2].outerHTML;
+const sortH = cardsArr2[3].outerHTML;
 
 function sortingByTitleAtoZ() {
     const cardLists = document.getElementById('card-lists');
@@ -5839,6 +5846,12 @@ function sortingByTitleAtoZ() {
     cardLists.innerHTML = "";
     //console.log(cardLists.innerHTML)
     cardLists.innerHTML = sortA + sortB + sortC + sortD;
+
+    const cardLists2 = document.getElementById('card-lists2');
+    const cardsArr2 = cardLists2.getElementsByClassName('col');
+
+    cardLists2.innerHTML = "";
+    cardLists2.innerHTML = sortE + sortF + sortG + sortH;
 }
 
 //Sorting functionality
@@ -5852,6 +5865,12 @@ function sortingByTitleZtoA() {
     cardLists.innerHTML = "";
     //console.log(cardLists.innerHTML)
     cardLists.innerHTML = sortD + sortC + sortB + sortA;
+
+    const cardLists2 = document.getElementById('card-lists2');
+    const cardsArr2 = cardLists2.getElementsByClassName('col');
+
+    cardLists2.innerHTML = "";
+    cardLists2.innerHTML = sortH + sortG + sortF + sortE;
 }
 
 //Sorting functionality
@@ -5865,5 +5884,11 @@ function defaultSorting() {
     //console.log(a)
     cardLists.innerHTML = "";
     //console.log(cardLists.innerHTML)
-    cardLists.innerHTML = sortA + sortC + sortD + sortB;
+    cardLists.innerHTML = sortA + sortB + sortC + sortD;
+    
+    const cardLists2 = document.getElementById('card-lists2');
+    const cardsArr2 = cardLists2.getElementsByClassName('col');
+
+    cardLists2.innerHTML = "";
+    cardLists2.innerHTML = sortE + sortF + sortG + sortH;
 }
