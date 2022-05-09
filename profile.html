@@ -159,89 +159,102 @@
         <main class="content">
             <section class="profile">
                 <div class="container">
-                    <div class="row row-cols-1 row-cols-md-2 g-3 mb-3">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-10 col-md-6 col-lg-4">
-                                    <img src="/assets/800x800.png" alt="">
-                                </div>
-                                <div class="col py-3 profile__attribute">
-                                    <ul d-flex justify-content-between>
-                                        <li>
-                                            <strong>Language:</strong> English, Chinese
-                                        </li>
-                                        <li>
-                                            <strong>Contact:</strong> ##########
-                                        </li>
-                                        <li>
-                                            <strong>Location:</strong> LOCATION ABC
-                                        </li>
-                                        <li>
-                                            <strong>Car Type:</strong> Automatic
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile col">
-                            <h3 class="mb-3 ps-5">Overall Rating</h3>
-                            <ul class="profile__overall-rating mb-3">
-                                <li>
-                                    <i class="fa-solid fa-star" id="1star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa-solid  fa-star" id="2star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa-solid  fa-star" id="3star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-star" id="4star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-star" id="5star"></i>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h3 class="mb-3">Bio</h3>
+                    <div class="mb-5">
+                        <h2>Description</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit consequuntur earum nisi temporibus. Neque itaque nobis, voluptate ex facilis eum excepturi dignissimos quidem pariatur dolorum eius eos perspiciatis quod.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, quasi nulla ab porro placeat molestiae atque corporis, autem quos non, assumenda magni eaque quisquam ad id! Vitae est magni impedit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis assumenda consequatur dolore non animi blanditiis hic magnam, eligendi reiciendis, praesentium quasi at veritatis. Voluptates exercitationem provident, praesentium repudiandae sapiente incidunt? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora velit nisi hic voluptate dicta tempore esse, ratione quasi iusto qui laboriosam facere dignissimos eaque accusamus aliquam dolore assumenda minima maxime!
                         </p>
                     </div>
 
-                </div>
-            </section>
-            <hr>
-            <section class="review mb-5">
-                <div class="container">
-                    <div class="row justify-content-start review__wrapper ">
-                        <h3>Rating</h3>
-                        <ul class="review__rating mb-3">
-                            <li>
-                                <i class="fa-solid fa-star" id="1star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-star" id="2star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-star" id="3star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-star" id="4star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-star" id="5star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
-                            </li>
-                        </ul>
+                    <h3>Instructor Name</h3>
 
-                        <h3>Comment</h3>
-                        <div class="review__comment">
-                            <textarea class="form-control" id="reviewComment" placeholder="What is your feedback?"></textarea>
-                            <button onclick="clearComment()" type="button" class="btn btn-success">Submit</button>
+                    <hr>
+
+                    <div class="row mb-3">
+                        <div class="col-6 col-lg-9">
+                            <div class="row row-cols-1 row-cols-lg-3 gy-3">
+                                <div class="col">
+                                    <img src="assets/800x800.png" alt="profile picture">
+                                </div>
+                                <div class="col">
+                                    <h4>Details</h4>
+                                    <ul>
+                                        <li>
+                                            <span>Language:</span> English
+                                        </li>
+                                        <li>
+                                            <span>Contact:</span> 0412 345 678
+                                        </li>
+                                        <li>
+                                            <span>Location:</span> Darwin
+                                        </li>
+                                        <li>
+                                            <span>Car Type:</span> Automatic
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h4>Bio</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In maiores magni, illum nulla cupiditate quas voluptatem autem doloribus architecto libero amet ea consequuntur optio nisi aut? Officia beatae velit iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita consequuntur possimus tempora asperiores provident! Doloremque, ab eum. Nihil, maiores? Ab id sint culpa neque! At debitis pariatur cupiditate repellat delectus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="profile__overall-rating">
+                                <h4>Overall Rating</h4> 
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="far fa-star"></i>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
+                    <hr>
+
+                    <section class="review mb-5">
+                        <div class="review__wrapper">
+                            <h3>Your Rating</h3>
+                            <ul class="review__rating mb-3">
+                                <li>
+                                    <i class="fa-solid fa-star" id="1star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star" id="2star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star" id="3star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star" id="4star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-star" id="5star" onclick="markStar(this)" onmouseover="starOver(this)" onmouseout="starOut(this)"></i>
+                                </li>
+                            </ul>
+            
+                            <h3>Your Comment</h3>
+                            <div class="review__comment">
+                                <textarea class="form-control" id="reviewComment" placeholder="What is your feedback?"></textarea>
+                                <button onclick="clearComment()" type="button" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </section>
         </main>
