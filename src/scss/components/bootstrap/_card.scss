@@ -36,24 +36,52 @@
     }
 
     &--class {
-        // write styles here to style the classes card
+        #{$this}-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: none;
 
-        #{$this}-body {
+            span {
+                &:first-child {
+                    font-weight: bold;
+                }
 
+                &:last-child {
+                    color: $white;
+                    background-color: $primary;
+                    padding: 0.25rem 1rem;
+                    border-radius: 1rem;
+                }
+            }
         }
         
         #{$this}-title {
-            
+            color: $primary;
+            background-color: $white;
+
+            &:hover {
+                background-color: $white;
+            }
         }
 
-        #{$this}-text {
-            
+        #{$this}-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: none;
+
+            span {
+                font-weight: bold;
+                
+                i {
+                    margin-right: 0.25rem;
+                }
+            }
         }
     }
 
     &--community {
-        // write styles here to style the community card
-
         #{$this}-body {
 
         }
