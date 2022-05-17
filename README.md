@@ -21,8 +21,14 @@ For development:
 npm run dev
 ```
 
-For pushing changes to the live site:
+For pushing changes to the version one live site:
 
 ```bash
-git subtree push --prefix dist origin gh-pages
+git subtree push --prefix dist origin version-one
+```
+
+For pushing changes to the version two live site:
+
+```bash
+git subtree push --prefix dist origin version-two
 ```
