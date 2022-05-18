@@ -72,14 +72,6 @@
                 &:first-child {
                     font-weight: bold;
                 }
-
-                &:last-child {
-                    color: $white;
-                    background-color: $primary;
-                    padding: 0.25rem 1rem;
-                    border-radius: 1rem;
-                    font-size: 0.8rem;
-                }
             }
         }
 

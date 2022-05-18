@@ -1,13 +1,16 @@
 .badge {
-    &--auto {
+    &--auto,
+    &--completed {
         background-color: $green;
     }
 
-    &--manual {
+    &--manual,
+    &--planning {
         background-color: $blue;
     }
 
-    &--darwin {
+    &--darwin,
+    &--confirmed {
         background-color: $orange;
     }
 
@@ -16,7 +19,8 @@
         background-color: $yellow;
     }
 
-    &--palmerston {
+    &--palmerston, 
+    &--cancelled {
         background-color: $red;
     }
 
