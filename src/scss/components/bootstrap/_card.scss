@@ -37,47 +37,26 @@
 
     &--class {
         #{$this}-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: none;
+            p {
+                font-size: 0.8rem;
+                margin: 0;
 
-            span {
-                &:first-child {
-                    font-weight: bold;
-                }
-
-                &:last-child {
-                    color: $white;
-                    background-color: $primary;
-                    padding: 0.25rem 1rem;
-                    border-radius: 1rem;
-                    font-size: 0.8rem;
+                i {
+                    margin-right: 0.25rem;
                 }
             }
         }
         
         #{$this}-title {
             color: $primary;
-            background-color: $white;
-
-            &:hover {
-                background-color: $white;
-            }
+            background-color: transparent;
+            padding: 0;
+            margin-bottom: 0.5rem;
         }
 
-        #{$this}-footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: none;
-
-            span {
-                font-size: 0.8rem;
-                
-                i {
-                    margin-right: 0.25rem;
-                }
+        #{$this}-body {
+            i {
+                margin-right: 0.25rem;
             }
         }
     }

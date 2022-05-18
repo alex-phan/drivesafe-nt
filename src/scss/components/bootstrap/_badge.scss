@@ -24,4 +24,14 @@
         color: $white;
         background-color: $black;
     }
+
+    &--d1 {
+        color: $white;
+        background-color: $primary;
+    }
+
+    &--d2 {
+        color: $white;
+        background-color: $secondary;
+    }
 }
